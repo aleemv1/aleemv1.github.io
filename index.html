@@ -14710,7 +14710,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Create a Spotipy object to make Spotify API calls</span>
-<span class="n">auth_manager</span> <span class="o">=</span> <span class="n">SpotifyClientCredentials</span><span class="p">(</span><span class="n">client_id</span><span class="o">=</span><span class="s1">&#39;3c3fbee31f304f398f75b4de0cad95f6&#39;</span><span class="p">,</span><span class="n">client_secret</span><span class="o">=</span><span class="s1">&#39;b09b4ea5db8342ae87d0832a2d9eb529&#39;</span><span class="p">)</span>
+<span class="n">auth_manager</span> <span class="o">=</span> <span class="n">SpotifyClientCredentials</span><span class="p">(</span><span class="n">client_id</span><span class="o">=</span><span class="s1">&#39;#&#39;</span><span class="p">,</span><span class="n">client_secret</span><span class="o">=</span><span class="s1">&#39;#&#39;</span><span class="p">)</span>
 <span class="n">sp</span> <span class="o">=</span> <span class="n">spotipy</span><span class="o">.</span><span class="n">Spotify</span><span class="p">(</span><span class="n">auth_manager</span><span class="o">=</span><span class="n">auth_manager</span><span class="p">)</span>
 </pre></div>
 
@@ -14833,7 +14833,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[53]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Add the ID the tracks to the Data Frame</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Add the ID of the tracks to the Data Frame</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;ID&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">songs</span>
 <span class="c1">#Mark each of these entries as 1 to indicate that these are good party songs and add to the Data Frame</span>
 <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Frat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
