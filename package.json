@@ -58,6 +58,7 @@
   "dependencies": {
     "jquery": "^3.7.1",
     "normalize.css": "^8.0.1",
+    "particles.js": "^2.0.0",
     "reset-css": "^5.0.2",
     "sanitize.css": "^13.0.0"
   }
