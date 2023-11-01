@@ -59,4 +59,48 @@ particlesJS('particles-js', {
 }
 );
 
+// function type() {
+//   const textElement = document.getElementById('text');
+//   const text = textElement.innerText;
+//   textElement.innerText = '';
+//   let i = 0;
+//     if (i < text.length) {
+//       const character = text.charAt(i);
+//       if (character === ' ') {
+//           textElement.innerHTML += '&nbsp;'; // Use a non-breaking space for spaces
+//       } else {
+//           textElement.innerText += character;
+//       }
+//       i++;
+//       setTimeout(type, 200); // Adjust the typing speed here (50ms in this example)
+//   }
+// }
+
+// Trigger the typing effect when the page loads
+// window.onload = type;
+
 /* eslint-enable */
+function typeText(elementId) {
+  const textElement = document.getElementById(elementId);
+  const text = textElement.innerText;
+  textElement.innerText = '';
+  let i = 0;
+
+  function type() {
+    if (i < text.length) {
+      const character = text.charAt(i);
+      if (character === ' ') {
+        textElement.innerHTML += '&nbsp;';
+      } else {
+        textElement.innerText += character;
+      }
+      i += 1;
+      setTimeout(type, 100); // Adjust the typing speed here (50ms in this example)
+    }
+  }
+
+  // Trigger the typing effect when the page loads
+  type();
+}
+typeText('school');
+typeText('job');

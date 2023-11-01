@@ -23,31 +23,71 @@ html{
   text-align: center;
   top: 50%;
   left: 50%;
+  width:40em;
+  max-width: 90%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   background-color: #f4f5f5;
 }
 
-p {
-  color:black;
-  font-size: x-large;
+h1 {
+  font-size: 3em;
 }
 
+.typewriter {
+  text-align: center;
+}
 
-.typing-demo {
+p {
+  font-size: 1.5em;
+}
+
+#name, #job, #school {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid transparent; /* Initial border color is transparent */
-  animation: typewriter 2s steps(28);
+  padding-bottom: 20px;
 }
 
-@keyframes typewriter {
-  from {
-      width: 0;
+.fa {
+  font-size: 48px;
+  padding-right: 15px;
+  transition: transform 0.3s;
+}
+
+.fa:hover {
+  animation: bounce 1.5s ease infinite; /* Apply the animation on hover */
+  color:#483475
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
   }
 
-  to {
-      width: 100%;
+  40% {
+      transform: translateY(-10px);
+  }
+
+  60% {
+      transform: translateY(-5px);
   }
 }
 
+.wiggle-text:hover {
+  font-size: 24px;
+  animation: wiggle 0.5s ease infinite; /* Apply the animation */
+}
+
+@keyframes wiggle {
+  0%, 100% {
+      transform: translateX(0); /* Start and end at the original position */
+  }
+
+  25% {
+      transform: translateX(5px); /* Move to the right */
+  }
+
+  75% {
+      transform: translateX(-5px); /* Move to the left */
+  }
+}
