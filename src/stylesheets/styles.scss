@@ -5,7 +5,9 @@
 }
 
 html{
-  background-image: linear-gradient(#070B34, #483475);
+  background-image: url('../images/new_york.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #particles-js {
@@ -74,7 +76,6 @@ p {
 }
 
 .wiggle-text:hover {
-  font-size: 24px;
   animation: wiggle 0.5s ease infinite; /* Apply the animation */
 }
 
@@ -108,5 +109,20 @@ a:visited {
 img {
   margin-bottom: 20px;
   border-radius: 10px;
-  width:70%;
+  max-width: 80%;
+}
+
+.fade-in {
+  opacity: 0; /* Start with the element hidden */
+  animation: fadein 2s ease-in-out forwards; /* Apply the fadeIn animation */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0; /* Element is fully transparent at the start */
+  }
+
+  to {
+    opacity: 1; /* Element is fully opaque at the end */
+  }
 }

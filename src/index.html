@@ -6,6 +6,12 @@
     <meta name="description" content="" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="javascripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
 </head>
 <body>
   <div id="particles-js"></div>
@@ -14,21 +20,20 @@
       <h1 id="name">Aleem Virani</h1>
     </div>
     <div>
-      <img src="images/ryan_reynolds.jpeg">
+      <img class='fade-in' src="images/ryan_reynolds.jpeg">
     </div>
     <div>
       <p id="school">CS @ UMD</p>
     </div>
     <div>
-      <p id="job">Former Capital One Intern</p>
+      <p id="job" class="wiggle-text">Capital One SWE</p>
     </div>
     <div>
       <a href="https://www.linkedin.com/in/aleem-virani/" class="fa fa-github fa-2x"></a>
       <a href="https://www.linkedin.com/in/aleem-virani/" class="fa fa-linkedin fa-2x"></a>
-      <!-- <i class="fa fa-file fa-2x"></i> -->
+      <a href="https://drive.google.com/file/d/1h5dMHYjKvPdLLnHgSXDflWeVn_vQj9Dh/view?usp=drive_link" class="fa fa-file fa-2x"></a>
     </div>
   </div>
-
 
 </body>
 </html>
