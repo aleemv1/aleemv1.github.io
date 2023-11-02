@@ -91,3 +91,22 @@ p {
       transform: translateX(-5px); /* Move to the left */
   }
 }
+
+
+a:link {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+a:visited {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}
+
+img {
+  margin-bottom: 20px;
+  border-radius: 10px;
+  width:70%;
+}
