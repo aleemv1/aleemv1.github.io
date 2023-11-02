@@ -1,0 +1,1 @@
+function typeText(e){var t=document.getElementById(e),n=t.innerText;t.innerText="";var i=0;!function e(){if(i<n.length){var r=n.charAt(i);" "===r?t.innerHTML+="&nbsp;":t.innerText+=r,i+=1,setTimeout(e,100)}}()}typeText("school"),typeText("job");
