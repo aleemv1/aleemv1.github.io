@@ -5,6 +5,7 @@ const fs = require('fs');
 
 const WebpackBar = require('webpackbar');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
@@ -25,6 +26,11 @@ const clean = new CleanWebpackPlugin();
 
 // Stylelint
 const stylelint = new StyleLintPlugin();
+
+// Copy static files untouched, e.g. static/spotify/index.html -> dist/spotify/index.html
+const staticFiles = new CopyWebpackPlugin({
+  patterns: [{ from: path.join(config.root, config.paths.static) }],
+});
 
 // Extract CSS
 const cssExtract = new MiniCssExtractPlugin({
@@ -116,6 +122,7 @@ module.exports = [
   clean,
   stylelint,
   cssExtract,
+  staticFiles,
   ...generateHTMLPlugins(),
   fs.existsSync(config.favicon) && favicons,
   config.env === 'production' && robots,

@@ -75,6 +75,7 @@ const sass = {
       loader: 'sass-loader',
       options: {
         sourceMap,
+        api: 'modern',
       },
     },
   ],
