@@ -39,6 +39,8 @@ const config = {
     config: 'config',
     src: 'src',
     dist: 'dist',
+    // Files in here are copied into dist as-is (no bundling), keeping their paths
+    static: 'static',
   },
   package: JSON.parse(
     fs.readFileSync(path.join(ROOT, '/package.json'), { encoding: 'utf-8' }),
